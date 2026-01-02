@@ -42,4 +42,8 @@ public class UserService {
         userResponse.setLastName(user.getLastName());
         return userResponse;
     }
+
+    public Boolean validateUser(String userId){
+        return repository.existsById(userId);
+    }
 }
