@@ -2,12 +2,15 @@ server:
   port: 8081
 spring:
   application:
-    name: userservice
+    name: user-service
   datasource:
-    url: jdbc:postgres://localhost:5432/fitness_user_db
-    username: postgres
-    password: admin
+    url: jdbc:postgresql://ep-silent-queen-a1x1ycq9-pooler.ap-southeast-1.aws.neon.tech/neondb?user=neondb_owner&password=npg_cQOxoje2gEp5&sslmode=require&channelBinding=require
   jpa:
     hibernate:
       ddl-auto: update
     database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

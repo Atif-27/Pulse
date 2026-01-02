@@ -2,10 +2,15 @@ server:
   port: 8082
 spring:
   application:
-    name: activityservice
-  data:
-    mongodb:
-      uri: sdafasd
-      database: sadasd
+    name: activity-service
+  mongodb:
+    uri: mongodb+srv://atif276ali_db_user:az2YXYCoAEQlXnRa@cluster0.uzh9sxl.mongodb.net/pulse-activity
 
+
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
 
