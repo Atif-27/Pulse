@@ -1,8 +1,6 @@
 server:
   port: 8081
 spring:
-  application:
-    name: user-service
   datasource:
     url: jdbc:postgresql://ep-silent-queen-a1x1ycq9-pooler.ap-southeast-1.aws.neon.tech/neondb?user=neondb_owner&password=npg_cQOxoje2gEp5&sslmode=require&channelBinding=require
   jpa:
