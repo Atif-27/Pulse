@@ -5,6 +5,9 @@ spring:
     name: activity-service
   mongodb:
     uri: mongodb+srv://atif276ali_db_user:az2YXYCoAEQlXnRa@cluster0.uzh9sxl.mongodb.net/pulse-activity
+  rabbitmq:
+    addresses: amqps://wzkkdora:GrjhpV0os5Sx9sijMRr10l4bL51iNRLi@puffin.rmq2.cloudamqp.com/wzkkdora
+
 
 
 
@@ -14,3 +17,11 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 
+
+rabbitmq:
+  exchange:
+    name: fitness.exchange
+  queue:
+    name: activity.queue
+  routing:
+    key: activity.tracking
